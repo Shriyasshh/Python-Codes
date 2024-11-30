@@ -1,12 +1,4 @@
-'''def fact(n):
-    if n==0 or n==1:
-        return 1
-    else:
-        return n*fact(n-1)
-
-print(fact(5))
-'''
-
+# Fibonacci Series
 '''def fibonacci(n):
     sequence = [0, 1]
     while len(sequence) < n:
@@ -16,7 +8,7 @@ print(fact(5))
 
 # Example usage
 n = 10  # Change this value to generate more Fibonacci numbers
-print(fibonacci(n))'''
+print(fibonacci(n))
 
 
 def fib(n):
@@ -28,4 +20,24 @@ def fib(n):
             fi.append(fi[i-1]+fi[i-2])
         return fi
 
-print(fib(8))
+print(fib(8))'''
+
+
+# Exception handling
+'''a=(input("Enter a number:"))
+
+try:
+    for i in range(1,11):
+        print(f"int({a}) * {i} = {int(a)*i}")
+except Exception as e:
+    print(e)
+print("End of program")
+
+try:
+    num=int(input("Enter any integer:"))
+    b=[6,3]
+    print(b[num])
+except ValueError:
+    print(" Number entered is not an integer.")
+except IndexError:
+    print("Index error")'''
