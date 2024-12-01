@@ -55,7 +55,7 @@ except:
 finally:                              #It is use full in function creation
     print("IAM ALWAYS EXECUTED")      # It is same as print("IAM ALWAYS EXECUTED") without function
 '''
-
+'''
 def fun():
     try:
         l=[1,5,7,9]
@@ -72,3 +72,14 @@ def fun():
 
 x=fun()
 print(x)
+'''
+
+
+#Custom Error Raising
+
+'''
+a=int(input("Enter a number betwn 5 and 10:"))
+if a<5 or a>9:
+    raise ValueError("Number should be between 5 and 10")
+'''
+
