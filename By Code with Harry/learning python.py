@@ -83,3 +83,14 @@ if a<5 or a>9:
     raise ValueError("Number should be between 5 and 10")
 '''
 
+# Short hand if else
+
+a=350
+b=3000
+print("A") if a>b else print("=") if a==b else print("B")
+
+print("9") if a>b else ""
+print("10") if a<b else print("3")
+
+c=7 if a>b else 5
+print(c)
