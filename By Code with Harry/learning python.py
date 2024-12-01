@@ -23,7 +23,7 @@ def fib(n):
 print(fib(8))'''
 
 
-# Exception handling
+# Exception handling Ignore/skips Errors
 '''a=(input("Enter a number:"))
 
 try:
@@ -41,3 +41,34 @@ except ValueError:
     print(" Number entered is not an integer.")
 except IndexError:
     print("Index error")'''
+
+# Finally Clause Gives output even if exception/error occurs
+'''
+try:
+    l=[1,5,7,9]
+    i=int(input("Enter a index:"))
+    print(l[i])
+except IndexError:
+    print("indexerror occured")
+except:
+    print("some error occured")
+finally:                              #It is use full in function creation
+    print("IAM ALWAYS EXECUTED")      # It is same as print("IAM ALWAYS EXECUTED") without function
+'''
+
+def fun():
+    try:
+        l=[1,5,7,9]
+        i=int(input("Enter a index:"))
+        print(l[i])
+        return 1
+    except:
+        print("some error occured")
+        return 0
+    finally:                              
+        print("IAM ALWAYS EXECUTED")
+    #print("IAM ALWAYS EXECUTED")
+
+
+x=fun()
+print(x)
