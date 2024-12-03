@@ -1,5 +1,6 @@
 # Fibonacci Series
-'''def fibonacci(n):
+'''
+def fibonacci(n):
     sequence = [0, 1]
     while len(sequence) < n:
         next_value = sequence[-1] + sequence[-2]
@@ -24,7 +25,8 @@ print(fib(8))'''
 
 
 # Exception handling Ignore/skips Errors
-'''a=(input("Enter a number:"))
+'''
+a=(input("Enter a number:"))
 
 try:
     for i in range(1,11):
@@ -84,7 +86,7 @@ if a<5 or a>9:
 '''
 
 # Short hand if else
-
+'''
 a=350
 b=3000
 print("A") if a>b else print("=") if a==b else print("B")
@@ -94,3 +96,46 @@ print("10") if a<b else print("3")
 
 c=7 if a>b else 5
 print(c)
+'''
+
+
+# Enumerate Function
+
+'''
+marks=[2,5,7,9,10,5]
+
+for i in marks:
+    print(i)
+
+
+for nos  in enumerate(marks,3):
+    print(nos)
+
+
+for index,mark  in enumerate(marks):
+    print(index,mark)
+'''
+
+
+# Importing in python
+'''
+import math
+result=math.sqrt(9)
+print(result)
+
+from math import sqrt,pi
+from math import *
+
+result=sqrt(9)*pi
+print(result)
+
+from math import pi, sqrt as sq
+import math as m
+
+
+print(dir(math))
+
+from Bob import bob,Welcome
+print(Welcome)
+print(bob())
+'''
