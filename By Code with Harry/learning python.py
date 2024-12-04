@@ -139,3 +139,9 @@ from Bob import bob,Welcome
 print(Welcome)
 print(bob())
 '''
+
+# if __name__ == "__main__"
+
+import Bob
+Bob.bob()
+Bob.welcome()
