@@ -96,10 +96,64 @@ with open ('myfile.txt','r') as f:
 
 
 #truncate()
-
+'''
 with open('myfile2.txt','w') as f:
     f.write("Hello World")
     f.truncate(8)
 
 with open('myfile2.txt','r') as f:
         print(f.read())
+'''
+
+
+#Lambda Function
+
+# def double(x):
+#     return x*2
+
+# print(double(5))
+'''
+double=lambda x: x*2
+print(double(5)) 
+
+cube=lambda x: x**3
+print(cube(5))
+'''
+
+#Map filter reduce  
+
+# always give soln of input
+'''
+def cube(X):
+    return X**3
+
+l=[1,2,3,4,5,6,9]
+cubes=list(map(cube,l))
+print(cubes)
+'''
+'''l=[1,2,3,4,5,6]
+newl=[]
+for i in l:
+    newl.append(cube(i))
+
+print(newl)'''
+
+#Filter()
+# gives output based on condition if true
+'''
+def filter_function(a):
+    return a>4
+b=filter(filter_function,l)
+print(b)
+newnewl=list(filter(filter_function,l))
+print(newnewl)
+'''
+
+
+# Reduce()
+
+'''from functools import reduce
+
+no=[1,2,3,4,5]
+sum=reduce(lambda x,y:x+y,no)
+print(sum)'''
