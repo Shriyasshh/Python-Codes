@@ -157,3 +157,16 @@ print(newnewl)
 no=[1,2,3,4,5]
 sum=reduce(lambda x,y:x+y,no)
 print(sum)'''
+
+
+# is , ==   
+
+a=4
+b="4"
+print(a is b ) #compares exact location of object in memory
+print(a==b)     #compares value
+
+c=[1,2,5]
+d=[1,2,5]
+print(c is d)
+print(c==d)
