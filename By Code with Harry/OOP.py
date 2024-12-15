@@ -34,7 +34,7 @@ b.info()
 '''
 
 #Decorators
-
+'''
 def greet(fun):
     def mfx(*args,**kwargs):
         print("Good Morning")
@@ -54,3 +54,29 @@ greet(hello)()
 # hello()
 greet(add)(1,2)
 # add(1,2)
+'''
+
+
+# Getters & Setters
+'''
+class Myclass:
+    def __init__(self,value):
+        self._value=value
+
+    def show(self):
+        print(f"Value is {self._value}")
+    @property
+    def ten_value(self):            #getter
+        return 10*self._value
+        
+    
+    @ten_value.setter               #setter
+    def ten_value(self,new_value):
+        self._value=new_value/10
+
+obj=Myclass(10)
+# print(obj.ten_value)
+obj.ten_value=67
+print(obj.ten_value)
+obj.show()
+'''
