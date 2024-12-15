@@ -83,6 +83,7 @@ obj.show()
 
 # Inheritance
 
+'''
 class Employee:
     def __init__(self,name,id):
         self.name=name
@@ -100,3 +101,19 @@ e1.showDetails()
 
 e2=Programmer("John mini",102)
 e2.showLanguage()
+'''
+
+# Access Modifiers
+
+class Employee:
+    def __init__(self):
+        self.name="Bob"     #Public
+        self._age=19        #Protected
+        self.__salary=10000 #Private
+
+a=Employee()
+print(a.name)
+print(a._age)
+# print(a.__salary)         #Throws error
+print(a._Employee__salary)    #For Accessing private variable
+
