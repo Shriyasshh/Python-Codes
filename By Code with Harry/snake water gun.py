@@ -13,8 +13,8 @@ else:
 
     
 import random
-com=[0,1,2]
-no=random.choice(com)
+
+no=random.randint(0,2)
 name=["snake","water","gun"]
 # print(name[no])
 
