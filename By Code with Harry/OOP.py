@@ -104,7 +104,7 @@ e2.showLanguage()
 '''
 
 # Access Modifiers
-
+'''
 class Employee:
     def __init__(self):
         self.name="Bob"     #Public
@@ -116,4 +116,27 @@ print(a.name)
 print(a._age)
 # print(a.__salary)         #Throws error
 print(a._Employee__salary)    #For Accessing private variable
+'''
 
+# Static method
+
+class Math():
+    def __init__(self,num):
+        self.num=num
+
+    def add2num(self,n):
+        self.num=self.num+n
+
+    @staticmethod
+    def add(a,b):
+        return a+b
+
+
+result=Math.add(2,3)
+print(result)
+a=Math(5)
+print(a.num)
+a.add2num(10)
+print(a.num)
+print(a.add(2,3))   
+#if static notused it show error of passing 3argument self,a,b
