@@ -119,7 +119,7 @@ print(a._Employee__salary)    #For Accessing private variable
 '''
 
 # Static method
-
+'''
 class Math():
     def __init__(self,num):
         self.num=num
@@ -140,3 +140,70 @@ a.add2num(10)
 print(a.num)
 print(a.add(2,3))   
 #if static notused it show error of passing 3argument self,a,b
+'''
+
+#Instance & class vaiables
+'''
+class Employee:
+    company_name="Apple"
+    No_employees=0
+    def __init__(self,name):
+        self.name=name
+        self.raise_amount=1.04
+        Employee.No_employees+=1
+    def showDetails(self):
+        print(f"The name of Employee is {self.name} and the raise amount in {self.No_employees} sized {self.company_name}  is {self.raise_amount}")
+
+emp1=Employee("Bob")
+emp1.raise_amount=2.05
+emp1.company_name="apple india"
+emp1.showDetails()
+# Employee.showDetails(emp1)
+e2=Employee("John")
+e2.showDetails()
+Employee.company_name="Microsoft"
+print(Employee.company_name)
+'''
+
+
+# Class Method
+'''
+class Employee:
+    company="Apple"
+    def show(self):
+        print(f"The name is {self.name} and the company is {self.company}")
+
+    @classmethod
+    def changecompany(cls,newcompany):
+        cls.company=newcompany
+    
+e1=Employee()
+e1.name="Bob"
+e1.show()
+e1.changecompany("Microsoft")
+e1.show()
+print(Employee.company)
+'''
+
+#Class methods as Alternative Constructor
+
+class Employee:
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+    @classmethod
+    def fromstr(cls,string):
+        return cls(string.split("-")[0],int(string.split("-")[1]))
+        
+e1=Employee("Bob",10000)
+print(e1.name)
+print(e1.salary)
+
+
+string="Bob-10000"
+e2=Employee.fromstr(string)
+# e2=Employee(string.split("-")[0],string.split("-")[1])
+print(e2.name)
+print(e2.salary)
+
+
