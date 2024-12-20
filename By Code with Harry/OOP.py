@@ -187,6 +187,7 @@ print(Employee.company)
 
 #Class methods as Alternative Constructor
 
+'''
 class Employee:
     def __init__(self,name,salary):
         self.name=name
@@ -205,5 +206,64 @@ e2=Employee.fromstr(string)
 # e2=Employee(string.split("-")[0],string.split("-")[1])
 print(e2.name)
 print(e2.salary)
+'''
+
+# fun dir(),__dict__,help() methods
+'''
+x=(1,2,3)
+print(dir(x))
+print(x.__add__)
 
 
+
+class Person:
+    def __init__(self,name,ages):
+        self.name=name
+        self.age=ages
+        self.version=1
+p=Person("Bob",20)
+# print(p.__dict__)
+
+print(help(Person))
+print(help(str))
+'''
+
+# Super Keyword
+'''
+class Parentclass:
+    def parent_method(self):
+        print('This is a parent method')
+
+class Childclass(Parentclass):
+    def parent_method(self):
+        print("Bob")
+        super().parent_method()
+    def child_method(self):
+        print("This is a child method")
+        super().parent_method()
+
+child_obj=Childclass()
+child_obj.child_method()
+child_obj.parent_method()
+'''
+
+
+'''
+class Employee:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+
+class Programmer(Employee):
+    def __init__(self,name,id,lang):
+        super().__init__(name,id)
+        self.lang=lang
+
+
+R=Employee("Bob",101)
+P=Programmer("Ram",574,"Python")
+
+print(P.name)
+print(P.id)
+print(P.lang)
+'''
