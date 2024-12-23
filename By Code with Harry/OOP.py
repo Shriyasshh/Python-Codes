@@ -142,13 +142,13 @@ print(a.add(2,3))
 #if static notused it show error of passing 3argument self,a,b
 '''
 
-#Instance & class vaiables
+#Instance & class variables
 '''
 class Employee:
-    company_name="Apple"
+    company_name="Apple"        #class variable
     No_employees=0
     def __init__(self,name):
-        self.name=name
+        self.name=name          #instance variable
         self.raise_amount=1.04
         Employee.No_employees+=1
     def showDetails(self):
@@ -295,3 +295,25 @@ class Employee1:
 # print(e.name)
 # print(len(e))
 # '''
+
+# Method Overloading
+
+class shape:
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def area(self):
+        return self.x*self.y
+class circle(shape):
+    def __init__(self,r,):
+        self.r=r
+        super().__init__(r,r)
+    def area(self):
+        return 3.14*super().area()
+        return 3.14*self.r**2
+
+    
+sq=shape(2,2)
+print(sq.area())
+cir=circle(2)
+print(cir.area())
