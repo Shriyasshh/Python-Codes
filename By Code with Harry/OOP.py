@@ -1,4 +1,4 @@
-'''
+
 class Person:
     name="Bob"
     age=19
@@ -13,9 +13,9 @@ a.occupation="Doctor"
 # print(a.name,a.occupation)
 # print(a.networth)
 a.info()
-'''
+
 #Constructors
-'''
+
 class Person:
     def __init__(self,n,o):
         print("hey i am a person")
@@ -31,10 +31,10 @@ a=Person("bob","engineer")
 b=Person("john","doctor")
 a.info()
 b.info()
-'''
+
 
 #Decorators
-'''
+
 def greet(fun):
     def mfx(*args,**kwargs):
         print("Good Morning")
@@ -54,11 +54,11 @@ greet(hello)()
 # hello()
 greet(add)(1,2)
 # add(1,2)
-'''
+
 
 
 # Getters & Setters
-'''
+
 class Myclass:
     def __init__(self,value):
         self._value=value
@@ -79,11 +79,11 @@ obj=Myclass(10)
 obj.ten_value=67
 print(obj.ten_value)
 obj.show()
-'''
+
 
 # Inheritance
 
-'''
+
 class Employee:
     def __init__(self,name,id):
         self.name=name
@@ -101,10 +101,10 @@ e1.showDetails()
 
 e2=Programmer("John mini",102)
 e2.showLanguage()
-'''
+
 
 # Access Modifiers
-'''
+
 class Employee:
     def __init__(self):
         self.name="Bob"     #Public
@@ -116,10 +116,10 @@ print(a.name)
 print(a._age)
 # print(a.__salary)         #Throws error
 print(a._Employee__salary)    #For Accessing private variable
-'''
+
 
 # Static method
-'''
+
 class Math():
     def __init__(self,num):
         self.num=num
@@ -140,10 +140,10 @@ a.add2num(10)
 print(a.num)
 print(a.add(2,3))   
 #if static notused it show error of passing 3argument self,a,b
-'''
+
 
 #Instance & class variables
-'''
+
 class Employee:
     company_name="Apple"        #class variable
     No_employees=0
@@ -163,11 +163,11 @@ e2=Employee("John")
 e2.showDetails()
 Employee.company_name="Microsoft"
 print(Employee.company_name)
-'''
+
 
 
 # Class Method
-'''
+
 class Employee:
     company="Apple"
     def show(self):
@@ -183,11 +183,11 @@ e1.show()
 e1.changecompany("Microsoft")
 e1.show()
 print(Employee.company)
-'''
+
 
 #Class methods as Alternative Constructor
 
-'''
+
 class Employee:
     def __init__(self,name,salary):
         self.name=name
@@ -206,10 +206,10 @@ e2=Employee.fromstr(string)
 # e2=Employee(string.split("-")[0],string.split("-")[1])
 print(e2.name)
 print(e2.salary)
-'''
+
 
 # fun dir(),__dict__,help() methods
-'''
+
 x=(1,2,3)
 print(dir(x))
 print(x.__add__)
@@ -226,10 +226,10 @@ p=Person("Bob",20)
 
 print(help(Person))
 print(help(str))
-'''
+
 
 # Super Keyword
-'''
+
 class Parentclass:
     def parent_method(self):
         print('This is a parent method')
@@ -245,10 +245,9 @@ class Childclass(Parentclass):
 child_obj=Childclass()
 child_obj.child_method()
 child_obj.parent_method()
-'''
 
 
-'''
+
 class Employee:
     def __init__(self,name,id):
         self.name=name
@@ -266,12 +265,12 @@ P=Programmer("Ram",574,"Python")
 print(P.name)
 print(P.id)
 print(P.lang)
-'''
+
 
 
 #Magic/Dunder methods
 
-'''
+
 class Employee1:
     def __init__(self,name):
         self.name=name
@@ -294,10 +293,10 @@ class Employee1:
 # e=Employee1("Bob")
 # print(e.name)
 # print(len(e))
-# '''
+
 
 # Method Overloading
-'''
+
 class shape:
     def __init__(self,x,y):
         self.x=x
@@ -317,7 +316,7 @@ sq=shape(2,2)
 print(sq.area())
 cir=circle(2)
 print(cir.area())
-'''
+
 
 # Operators Overloading
 
