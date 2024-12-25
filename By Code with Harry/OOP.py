@@ -297,7 +297,7 @@ class Employee1:
 # '''
 
 # Method Overloading
-
+'''
 class shape:
     def __init__(self,x,y):
         self.x=x
@@ -317,3 +317,26 @@ sq=shape(2,2)
 print(sq.area())
 cir=circle(2)
 print(cir.area())
+'''
+
+# Operators Overloading
+
+class vector:
+    def __init__(self,i,j,k):
+        self.i=i
+        self.j=j
+        self.k=k
+
+    def __str__(self):
+        return f"{self.i}i + {self.j}j + {self.k}k"
+    
+    def __add__(self,x):
+        return vector(self.i+x.i,self.j+x.j,self.k+x.k)
+v1=vector(1,2,3)
+print(v1)
+
+v2=vector(4,7,5)
+print(v2)
+
+print(v1+v2)
+print(type(v1+v2))
