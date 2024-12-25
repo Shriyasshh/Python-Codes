@@ -52,7 +52,7 @@ print(Dancer_Employee.mro())
 '''
 
 # Multilevel Inheritance
-
+'''
 class Animal:
     def __init__(self,name,species):
         self.name=name
@@ -83,3 +83,30 @@ class GoldenRetriever(Dog):
 g=GoldenRetriever("Tommy","Golden")
 g.show()
 print(GoldenRetriever.mro())
+'''
+
+# Hybrid inheritance
+'''
+class Baseclass:
+    pass
+class Derived1(Baseclass):
+    pass
+class Derived2(Baseclass):
+    pass
+class Derived3(Derived1,Derived2):
+    pass
+'''
+
+# Hierarchical inheritance
+'''
+class Baseclass:
+    pass
+class D1(Baseclass):
+    pass
+class D2(Baseclass):
+    pass
+class D3(D1):
+    pass
+class D4(D2):
+    pass
+'''
