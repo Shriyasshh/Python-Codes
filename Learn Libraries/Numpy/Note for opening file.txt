@@ -1,0 +1,5 @@
+To open file to read code in jupyter follow below steps:
+1. use key 'shift+ right click' on mouse 
+2.'open powershell in window here' option
+3. type "jupyter notbook"
+4. you will be in jupyter
