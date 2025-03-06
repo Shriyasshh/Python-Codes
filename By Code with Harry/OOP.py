@@ -290,10 +290,11 @@ class Employee1:
         print("Hey I am good")
 
 
-# e=Employee1("Bob")
-# print(e.name)
-# print(len(e))
-
+e=Employee1("Bob")
+print(e.name)
+print(len(e))
+print(e)    #Make either __str__ or __repr__ as a comment 
+            #to see the output 
 
 # Method Overloading
 
@@ -307,18 +308,24 @@ class circle(shape):
     def __init__(self,r,):
         self.r=r
         super().__init__(r,r)
+        #super().method_name(arguments)
+
     def area(self):
         return 3.14*super().area()
-        return 3.14*self.r**2
+        # return 3.14*self.r**2
 
     
 sq=shape(2,2)
 print(sq.area())
 cir=circle(2)
 print(cir.area())
-
+#The super() function in Python is used to call methods 
+# from a parent (or superclass) in a child(or subclass) class
 
 # Operators Overloading
+
+#allows you to define custom behavior for operators 
+#(e.g., +, -, *, etc.) when used with objects of a user-defined class
 
 class vector:
     def __init__(self,i,j,k):
@@ -329,8 +336,8 @@ class vector:
     def __str__(self):
         return f"{self.i}i + {self.j}j + {self.k}k"
     
-    def __add__(self,x):
-        return vector(self.i+x.i,self.j+x.j,self.k+x.k)
+    def __add__(self,other):
+        return vector(self.i+other.i,self.j+other.j,self.k+other.k)
 v1=vector(1,2,3)
 print(v1)
 
