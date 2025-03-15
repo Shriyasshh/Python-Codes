@@ -8,7 +8,7 @@ text='''Cyfeilliog (died c. 927) was a bishop in south-east Wales. The locatio
 
 #word 'search' - search for  1st a pattern
 
-match=re.search(pattern,text)
+# match=re.search(pattern,text)
 match=re.search(p,text)  
 print(match)
 
@@ -16,7 +16,8 @@ print(match)
 
 #word finditer - search for all  patterns in the text
 
-matches=re.finditer(p,text)
+# matches=re.finditer(p,text)
+matches=re.finditer(pattern,text)
 for i in matches:
     # print(i)
     print(i.span())

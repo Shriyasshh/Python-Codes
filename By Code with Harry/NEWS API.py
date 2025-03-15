@@ -29,7 +29,12 @@ news=json.loads(r.text)
 # print(news,type(news))
 
 for i in news['articles']:
-    print(i['title'])
-    print(i['description'])
-    # print(i['url'])
+    # print(i['title'])
+    # print(i['description'])
+    # # print(i['url'])
+    # print("-----------------\n-----------------")
+
+    print("Title:", i['title'])
+    print("Description:", i['description'])
+    print("Published At:", i['publishedAt'])  # Displaying the date of upload
     print("-----------------\n-----------------")
