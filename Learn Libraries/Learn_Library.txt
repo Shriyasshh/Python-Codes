@@ -1,0 +1,7 @@
+
+
+Library										            Documentation
+https://pypi.org/project/plyer/#data					https://plyer.readthedocs.io/en/latest/
+
+https://pypi.org/project/pyttsx3/                       https://pyttsx3.readthedocs.io/en/latest/
+

@@ -293,8 +293,10 @@ class Employee1:
 e=Employee1("Bob")
 print(e.name)
 print(len(e))
-print(e)    #Make either __str__ or __repr__ as a comment 
-            #to see the output 
+print(e)    #Make either __str__ or __repr__ as a comment to see the output 
+e()         #Calling the function(__call__)
+print(str(e))  
+print(repr(e))
 
 # Method Overloading
 

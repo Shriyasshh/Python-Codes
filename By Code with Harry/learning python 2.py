@@ -131,6 +131,7 @@ l=[1,2,3,4,5,6,9]
 cubes=list(map(cube,l))
 print(cubes)
 
+# map works as below
 l=[1,2,3,4,5,6]
 newl=[]
 for i in l:
